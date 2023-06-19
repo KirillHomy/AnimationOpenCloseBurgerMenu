@@ -13,6 +13,8 @@
 		7F8DC8E52A40AD6F00C868FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DC8E32A40AD6F00C868FF /* Main.storyboard */; };
 		7F8DC8E72A40AD7000C868FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DC8E62A40AD7000C868FF /* Assets.xcassets */; };
 		7F8DC8EA2A40AD7000C868FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DC8E82A40AD7000C868FF /* LaunchScreen.storyboard */; };
+		7F8DC8F32A40AD9D00C868FF /* Rectangel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DC8F22A40AD9D00C868FF /* Rectangel.swift */; };
+		7F8DC8F52A40AE2500C868FF /* BurgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DC8F42A40AE2500C868FF /* BurgerMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7F8DC8E62A40AD7000C868FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F8DC8E92A40AD7000C868FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F8DC8EB2A40AD7000C868FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F8DC8F22A40AD9D00C868FF /* Rectangel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangel.swift; sourceTree = "<group>"; };
+		7F8DC8F42A40AE2500C868FF /* BurgerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		7F8DC8DC2A40AD6F00C868FF /* AnimationOpenCloseBurgerMenu */ = {
 			isa = PBXGroup;
 			children = (
+				7F8DC8F62A40BE0900C868FF /* Application */,
+				7F8DC8F12A40AD7E00C868FF /* Views */,
+				7F8DC8F72A40BE9100C868FF /* Controllers */,
+			);
+			path = AnimationOpenCloseBurgerMenu;
+			sourceTree = "<group>";
+		};
+		7F8DC8F12A40AD7E00C868FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DC8F22A40AD9D00C868FF /* Rectangel.swift */,
+				7F8DC8F42A40AE2500C868FF /* BurgerMenu.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F8DC8F62A40BE0900C868FF /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				7F8DC8DD2A40AD6F00C868FF /* AppDelegate.swift */,
 				7F8DC8DF2A40AD6F00C868FF /* SceneDelegate.swift */,
-				7F8DC8E12A40AD6F00C868FF /* ViewController.swift */,
-				7F8DC8E32A40AD6F00C868FF /* Main.storyboard */,
 				7F8DC8E62A40AD7000C868FF /* Assets.xcassets */,
 				7F8DC8E82A40AD7000C868FF /* LaunchScreen.storyboard */,
 				7F8DC8EB2A40AD7000C868FF /* Info.plist */,
 			);
-			path = AnimationOpenCloseBurgerMenu;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7F8DC8F72A40BE9100C868FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DC8E12A40AD6F00C868FF /* ViewController.swift */,
+				7F8DC8E32A40AD6F00C868FF /* Main.storyboard */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +170,9 @@
 			files = (
 				7F8DC8E22A40AD6F00C868FF /* ViewController.swift in Sources */,
 				7F8DC8DE2A40AD6F00C868FF /* AppDelegate.swift in Sources */,
+				7F8DC8F52A40AE2500C868FF /* BurgerMenu.swift in Sources */,
 				7F8DC8E02A40AD6F00C868FF /* SceneDelegate.swift in Sources */,
+				7F8DC8F32A40AD9D00C868FF /* Rectangel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSS48FCS24;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationOpenCloseBurgerMenu/Info.plist;
+				INFOPLIST_FILE = AnimationOpenCloseBurgerMenu/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSS48FCS24;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationOpenCloseBurgerMenu/Info.plist;
+				INFOPLIST_FILE = AnimationOpenCloseBurgerMenu/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

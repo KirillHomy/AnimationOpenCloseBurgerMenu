@@ -53,7 +53,7 @@ private extension ViewController {
 
 }
 
-// MARK: - f Method
+// MARK: - Internal Method
 private extension ViewController {
 
     func setupAnimate(x: Int = 20, y: Int = 50, width: Int = 100, height: Int = 100) {
